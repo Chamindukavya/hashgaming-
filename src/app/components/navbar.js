@@ -53,30 +53,31 @@ export default function App() {
           "data-[active=true]:after:bg-primary",
         ],
       }}
+      className=" font-bold bg-white-800 border-b- border-gray- rounded-b-full bg-gray-900" 
     >
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit">ACME</p>
+        <p className="font-bold text-inherit">C'sW </p>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4 " justify="center">
         <NavbarItem isActive={pathname === "/"}>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/" className="text-lg">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathname === "/Mygames"}>
-          <Link color="foreground" href="/">
-            My Games
+        <NavbarItem isActive={pathname === "/Mygames"} >
+          <Link color="foreground" href="/" className="text-lg">
+            Collection
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathname === "/#"}>
+        {/* <NavbarItem isActive={pathname === "/#"}>
           <Link color="foreground" href="/#">
-            Play Now
+           *****
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem isActive={pathname === "/Blogs"}>
-          <Link color="foreground" href="/">
-            Blogs
+          <Link color="foreground" href="/" className="text-lg">
+            Contact us
           </Link>
         </NavbarItem>
       </NavbarContent>
