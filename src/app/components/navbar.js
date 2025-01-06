@@ -17,10 +17,6 @@ export const AcmeLogo = () => {
   );
 };
 
-
-
-
-
 export default function App() {
   const router = useRouter();
   const pathname = usePathname();
@@ -33,9 +29,7 @@ export default function App() {
 
   };
  
-
   return (
- 
     <Navbar 
       classNames={{
         item: [
@@ -65,8 +59,8 @@ export default function App() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathname === "/Mygames"} >
-          <Link color="foreground" href="/" className="text-lg">
+        <NavbarItem isActive={pathname === "/collection"} >
+          <Link color="foreground" href="/collection" className="text-lg">
             Collection
           </Link>
         </NavbarItem>

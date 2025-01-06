@@ -23,7 +23,7 @@ const UsersPage = () => {
     }
 
     return (
-        <div>
+        <div className='text-black'>
             <h1>Users List</h1>
             <ul>
                 {users.map((user) => (
