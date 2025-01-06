@@ -50,9 +50,10 @@ export default function Home() {
 
   return (
     <div>
-    <div className="relative">
+<div>
+    <div className="relative bg-gradient-to-r from-blue-300 to-blue-950">
         <Layout>
-      <div data-aos="zoom-in" className="relative flex justify-between mr-10">
+      <div data-aos="zoom-in" className="relative flex justify-between mr-10 ">
         <div>
           <Image
             isBlurred
@@ -92,18 +93,23 @@ export default function Home() {
 
         </div>
         <br />  
-        <br />  
-       <div className="ml-9 mr-10 mb-10 mt-5 border-5 border-black rounded-xl shadow-xl shadow-blue-900">
+        <br />
+        <div >
+          <div className="ml-9 mr-10 mb-10 mt-5 border-5 border-black rounded-xl shadow-xl shadow-blue-900 ">
         <div data-aos="fade-up" className=" mt-6 text-3xl text-center text-black font-bold">
       Your ultimate destination for modern, stylish, and affordable fashion!
-      </div>  
-      <div data-aos="fade-up" className="mb-6 text-3xl text-center text-black font-bold">
+      </div>   
+      <div data-aos="fade-up" className="mb-6 text-3xl text-center text-black font-bold ">
       Discover a curated collection of clothing that celebrates individuality and timeless trends.
        </div>
-      
+          </div>  
+       
+      </div> 
+       <div>
 
-      </div>  
+        </div>
       <div  className="flex justify-between mr-10 mt-20 ">
+        
       <div data-aos="fade-up" className="ml-10 shadow-xl shadow-blue-900  border-5 border-blue-500 rounded-xl " >
           <Image
             isBlurred isZoomed
@@ -154,41 +160,29 @@ export default function Home() {
       <div>
       <br />
        
-      
-    </div>
-    </Layout>
-
-    </div>
-    <br />
-    <br />
-    <div className="flex justify-center">
-   
-    <button 
+      <div className="flex justify-center">
+        <button 
         onClick={travel}
         className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-black  rounded-lg">
         Explore More Items
-      </button>
-  </div>                              
-
-
-       
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        </button>
+      </div>   
       <br />
       <br />
       <br />
       <br />  
+      <br />
+      <br />
+      <br />
+      <br />                             
+
     </div>
+    </Layout>
+
+    </div>
+    </div>
+    </div>
+    
    
   );
 }

@@ -47,7 +47,7 @@ export default function App() {
           "data-[active=true]:after:bg-primary",
         ],
       }}
-      className=" font-bold bg-white-800 border-b- border-gray- rounded-b-full bg-gray-900" 
+      className=" font-bold bg-white-800 border-b- border-black bg-gray-900 " 
     >
       <NavbarBrand>
         <AcmeLogo />
@@ -59,8 +59,8 @@ export default function App() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={pathname === "/collection"} >
-          <Link color="foreground" href="/collection" className="text-lg">
+        <NavbarItem isActive={pathname === "/items"} >
+          <Link color="foreground" href="/items" className="text-lg">
             Collection
           </Link>
         </NavbarItem>

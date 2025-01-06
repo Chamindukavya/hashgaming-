@@ -1,8 +1,6 @@
 "use client"
 import { ChangeEvent, useState } from "react"
 import axios from "axios";
-import { comma } from "postcss/lib/list";
-
 
 export default function Admin(){
 
@@ -11,7 +9,7 @@ export default function Admin(){
     const [price,setPrice] = useState(0.00)
 
 
-    const handleSubmit = async(e:ChangeEvent<HTMLInputElement>) => {    
+    const handleSubmit = async(e: React.MouseEvent<HTMLButtonElement>) => {    
 
         e.preventDefault()
         if (title==="" || description==="" || price === 0.00){

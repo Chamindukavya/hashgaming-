@@ -104,13 +104,23 @@ export default function Page() {
     user: [{name:"kavu",age:20}]
   } 
 
+  let items:string[]
+  items = ["chamindu","kavya"]
 
-
-
-  return (
-    <div className="text-black">
-      <h1>Test Page</h1>
-      <p>Hello, {name}</p>
-    </div>
-  )
+  
+    return (
+      <div className="text-black">
+        {items.map((i,index)=>(
+            <div key={index}>{index}</div>
+        ))}
+<div className="relative h-full w-full bg-neutral-900">
+  <div className="absolute inset-0 bg-fuchsia-400 bg-[size:20px_20px] opacity-20 blur-[100px]"></div></div>
+<div >
+  <h1 className="text-white text-center text-4xl font-bold p-8">Gradient Background</h1>
+</div>
+      </div>
+        
+    
+    );
+  
 }
